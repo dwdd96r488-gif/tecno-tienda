@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno Tienda</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="encabezado">
+        <h1>Tecno Tienda</h1>
+        <h4>Objetos Tecnológicos</h4>
+		<div class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="PC.html">PC</a></li>
+        </ul>
+		<div>
+    </div>
+
+    <div class="h1">
+        <h2>Consolas de Videojuegos</h2>
+    </div>
+
+    <div class="caja2">
+
+        <div class="caja">
+            <img src="OIP.jpg" alt="Consola Xbox 360">
+            <h2>Xbox 360</h2>
+            <p>Precio: $120.000</p>
+            <button onclick="agregar('Xbox 360',120000)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="caja">
+            <img src="OIP7.jpg" alt="Consola PlayStation 4">
+            <h2>PlayStation 4</h2>
+            <p>Precio: $80.000</p>
+            <button onclick="agregar('PlayStation 4',80000)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="caja">
+            <img src="ps4.jpg" alt="Consola Nintendo Switch">
+            <h2>Nintendo Switch</h2>
+            <p>Precio: $50.000</p>
+            <button onclick="agregar('Nintendo Switch',50000)">
+                Agregar al carrito
+            </button>
+        </div>
+
+    </div>
+
+    <div class="carrito">
+        <h2>Mi Carrito de Compras</h2>
+
+        <ul id="lista-carrito"></ul>
+
+        <h3>Total: $<span id="total">0</span></h3>
+
+        <button onclick="vaciarCarrito()">
+            Vaciar carrito
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
